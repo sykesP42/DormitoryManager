@@ -12,12 +12,13 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     companion object {
         private const val DATABASE_NAME = "dormitory.db"
-        private const val DATABASE_VERSION = 2
+        private const val DATABASE_VERSION = 3
 
         private const val TABLE_STUDENTS = "students"
         private const val TABLE_DUTIES = "duties"
         private const val TABLE_SETTINGS = "settings"
         private const val TABLE_DUTY_RECORDS = "duty_records"
+        private const val TABLE_MEMOS = "memos"
 
         private const val KEY_ID = "id"
         private const val KEY_NAME = "name"
@@ -34,6 +35,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         private const val KEY_RATING = "rating"
         private const val KEY_REVIEW_NOTES = "review_notes"
         private const val KEY_LIKES = "likes"
+        private const val KEY_TITLE = "title"
+        private const val KEY_CONTENT = "content"
     }
 
     override fun onCreate(db: SQLiteDatabase) {
@@ -79,10 +82,22 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             )
         """.trimIndent()
 
+        val createMemosTable = """
+            CREATE TABLE $TABLE_MEMOS (
+                $KEY_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                $KEY_STUDENT_ID INTEGER,
+                $KEY_TITLE TEXT NOT NULL,
+                $KEY_CONTENT TEXT,
+                $KEY_DATE TEXT NOT NULL,
+                FOREIGN KEY ($KEY_STUDENT_ID) REFERENCES $TABLE_STUDENTS ($KEY_ID)
+            )
+        """.trimIndent()
+
         db.execSQL(createStudentsTable)
         db.execSQL(createDutiesTable)
         db.execSQL(createSettingsTable)
         db.execSQL(createDutyRecordsTable)
+        db.execSQL(createMemosTable)
 
         val defaultStudents = listOf(
             Student(name = "室友1", color = 0xFF6750A4.toInt(), orderIndex = 0),
@@ -120,6 +135,19 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 )
             """.trimIndent()
             db.execSQL(createDutyRecordsTable)
+        }
+        if (oldVersion < 3) {
+            val createMemosTable = """
+                CREATE TABLE $TABLE_MEMOS (
+                    $KEY_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                    $KEY_STUDENT_ID INTEGER,
+                    $KEY_TITLE TEXT NOT NULL,
+                    $KEY_CONTENT TEXT,
+                    $KEY_DATE TEXT NOT NULL,
+                    FOREIGN KEY ($KEY_STUDENT_ID) REFERENCES $TABLE_STUDENTS ($KEY_ID)
+                )
+            """.trimIndent()
+            db.execSQL(createMemosTable)
         }
     }
 
@@ -652,6 +680,91 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             db.insert(TABLE_DUTY_RECORDS, null, values)
         }
     }
+
+    fun addMemo(memo: Memo): Long {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(KEY_STUDENT_ID, memo.studentId)
+            put(KEY_TITLE, memo.title)
+            put(KEY_CONTENT, memo.content)
+            put(KEY_DATE, memo.date)
+        }
+        return db.insert(TABLE_MEMOS, null, values)
+    }
+
+    fun updateMemo(memo: Memo): Int {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(KEY_STUDENT_ID, memo.studentId)
+            put(KEY_TITLE, memo.title)
+            put(KEY_CONTENT, memo.content)
+            put(KEY_DATE, memo.date)
+        }
+        return db.update(TABLE_MEMOS, values, "$KEY_ID = ?", arrayOf(memo.id.toString()))
+    }
+
+    fun deleteMemo(id: Long): Int {
+        val db = writableDatabase
+        return db.delete(TABLE_MEMOS, "$KEY_ID = ?", arrayOf(id.toString()))
+    }
+
+    fun getMemos(): List<Memo> {
+        val memos = mutableListOf<Memo>()
+        val db = readableDatabase
+        val cursor: Cursor = db.query(
+            TABLE_MEMOS,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "$KEY_DATE DESC, $KEY_ID DESC"
+        )
+
+        cursor.use {
+            while (it.moveToNext()) {
+                memos.add(
+                    Memo(
+                        id = it.getLong(it.getColumnIndexOrThrow(KEY_ID)),
+                        studentId = if (it.isNull(it.getColumnIndexOrThrow(KEY_STUDENT_ID))) null else it.getLong(it.getColumnIndexOrThrow(KEY_STUDENT_ID)),
+                        title = it.getString(it.getColumnIndexOrThrow(KEY_TITLE)),
+                        content = it.getString(it.getColumnIndexOrThrow(KEY_CONTENT)),
+                        date = it.getString(it.getColumnIndexOrThrow(KEY_DATE))
+                    )
+                )
+            }
+        }
+        return memos
+    }
+
+    fun getMemosByStudent(studentId: Long): List<Memo> {
+        val memos = mutableListOf<Memo>()
+        val db = readableDatabase
+        val cursor: Cursor = db.query(
+            TABLE_MEMOS,
+            null,
+            "$KEY_STUDENT_ID = ?",
+            arrayOf(studentId.toString()),
+            null,
+            null,
+            "$KEY_DATE DESC, $KEY_ID DESC"
+        )
+
+        cursor.use {
+            while (it.moveToNext()) {
+                memos.add(
+                    Memo(
+                        id = it.getLong(it.getColumnIndexOrThrow(KEY_ID)),
+                        studentId = if (it.isNull(it.getColumnIndexOrThrow(KEY_STUDENT_ID))) null else it.getLong(it.getColumnIndexOrThrow(KEY_STUDENT_ID)),
+                        title = it.getString(it.getColumnIndexOrThrow(KEY_TITLE)),
+                        content = it.getString(it.getColumnIndexOrThrow(KEY_CONTENT)),
+                        date = it.getString(it.getColumnIndexOrThrow(KEY_DATE))
+                    )
+                )
+            }
+        }
+        return memos
+    }
 }
 
 data class DutyRecord(
@@ -663,4 +776,12 @@ data class DutyRecord(
     val rating: Int,
     val reviewNotes: String?,
     val likes: Int
+)
+
+data class Memo(
+    val id: Long,
+    val studentId: Long?,
+    val title: String,
+    val content: String?,
+    val date: String
 )

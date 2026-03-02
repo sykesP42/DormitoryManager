@@ -97,240 +97,284 @@
 50-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
 51
 52    <application
-52-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:17:5-98:19
+52-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:17:5-120:19
 53        android:allowBackup="true"
 53-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:18:9-35
 54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 54-->[androidx.core:core:1.12.0] C:\Users\24311\.gradle\caches\transforms-4\bac97f5e5f392679d5e472ea1cb85ac2\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 55        android:debuggable="true"
 56        android:extractNativeLibs="false"
-57        android:label="@string/app_name"
-57-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:19:9-41
-58        android:supportsRtl="true"
-58-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:20:9-35
-59        android:testOnly="true"
-60        android:theme="@style/Theme.DormitoryManager" >
-60-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:21:9-54
-61        <activity
-61-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:23:9-31:20
-62            android:name="com.dormitorymanager.MainActivity"
-62-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:24:13-41
-63            android:exported="true"
-63-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:25:13-36
-64            android:screenOrientation="portrait" >
-64-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:26:13-49
-65            <intent-filter>
-65-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:27:13-30:29
-66                <action android:name="android.intent.action.MAIN" />
-66-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:28:17-69
-66-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:28:25-66
-67
-68                <category android:name="android.intent.category.LAUNCHER" />
-68-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:29:17-77
-68-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:29:27-74
-69            </intent-filter>
-70        </activity>
-71        <activity
-71-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:32:9-35:52
-72            android:name="com.dormitorymanager.SwapDutyActivity"
-72-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:33:13-45
-73            android:exported="false"
-73-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:34:13-37
-74            android:screenOrientation="portrait" />
-74-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:35:13-49
-75        <activity
-75-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:36:9-39:52
-76            android:name="com.dormitorymanager.TimeOffActivity"
-76-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:37:13-44
-77            android:exported="false"
-77-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:38:13-37
-78            android:screenOrientation="portrait" />
-78-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:39:13-49
-79        <activity
-79-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:40:9-43:52
-80            android:name="com.dormitorymanager.MakeupDutyActivity"
-80-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:41:13-47
-81            android:exported="false"
-81-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:42:13-37
-82            android:screenOrientation="portrait" />
-82-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:43:13-49
-83        <activity
-83-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:44:9-47:52
-84            android:name="com.dormitorymanager.SettingsActivity"
-84-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:45:13-45
-85            android:exported="false"
-85-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:46:13-37
-86            android:screenOrientation="portrait" />
-86-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:47:13-49
-87        <activity
-87-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:48:9-51:52
-88            android:name="com.dormitorymanager.ManageStudentsActivity"
-88-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:49:13-51
-89            android:exported="false"
-89-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:50:13-37
-90            android:screenOrientation="portrait" />
-90-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:51:13-49
-91        <activity
-91-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:52:9-55:52
-92            android:name="com.dormitorymanager.HistoryActivity"
-92-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:53:13-44
-93            android:exported="false"
-93-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:54:13-37
-94            android:screenOrientation="portrait" />
-94-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:55:13-49
-95        <activity
-95-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:56:9-59:52
-96            android:name="com.dormitorymanager.StatisticsActivity"
-96-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:57:13-47
-97            android:exported="false"
-97-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:58:13-37
-98            android:screenOrientation="portrait" />
-98-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:59:13-49
-99        <activity
-99-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:60:9-63:52
-100            android:name="com.dormitorymanager.LeaderboardActivity"
-100-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:61:13-48
-101            android:exported="false"
-101-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:62:13-37
-102            android:screenOrientation="portrait" />
-102-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:63:13-49
-103        <activity
-103-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:64:9-67:52
-104            android:name="com.dormitorymanager.CalendarActivity"
-104-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:65:13-45
-105            android:exported="false"
-105-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:66:13-37
-106            android:screenOrientation="portrait" />
-106-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:67:13-49
-107        <activity
-107-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:68:9-71:52
-108            android:name="com.dormitorymanager.SyncActivity"
-108-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:69:13-41
-109            android:exported="false"
-109-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:70:13-37
-110            android:screenOrientation="portrait" />
-110-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:71:13-49
-111        <activity
-111-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:72:9-75:52
-112            android:name="com.dormitorymanager.QrDisplayActivity"
-112-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:73:13-46
-113            android:exported="false"
-113-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:74:13-37
-114            android:screenOrientation="portrait" />
-114-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:75:13-49
-115        <activity
-115-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:76:9-79:52
-116            android:name="com.dormitorymanager.NetworkShareActivity"
+57        android:icon="@mipmap/ic_launcher"
+57-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:19:9-43
+58        android:label="@string/app_name"
+58-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:21:9-41
+59        android:roundIcon="@mipmap/ic_launcher_round"
+59-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:20:9-54
+60        android:supportsRtl="true"
+60-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:22:9-35
+61        android:testOnly="true"
+62        android:theme="@style/Theme.DormitoryManager" >
+62-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:23:9-54
+63        <activity
+63-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:25:9-33:20
+64            android:name="com.dormitorymanager.MainActivity"
+64-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:26:13-41
+65            android:exported="true"
+65-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:27:13-36
+66            android:screenOrientation="portrait" >
+66-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:28:13-49
+67            <intent-filter>
+67-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:29:13-32:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:30:17-69
+68-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:30:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:31:17-77
+70-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:31:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity
+73-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:34:9-37:52
+74            android:name="com.dormitorymanager.SwapDutyActivity"
+74-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:35:13-45
+75            android:exported="false"
+75-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:36:13-37
+76            android:screenOrientation="portrait" />
+76-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:37:13-49
+77        <activity
+77-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:38:9-41:52
+78            android:name="com.dormitorymanager.TimeOffActivity"
+78-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:39:13-44
+79            android:exported="false"
+79-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:40:13-37
+80            android:screenOrientation="portrait" />
+80-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:41:13-49
+81        <activity
+81-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:42:9-45:52
+82            android:name="com.dormitorymanager.MakeupDutyActivity"
+82-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:43:13-47
+83            android:exported="false"
+83-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:44:13-37
+84            android:screenOrientation="portrait" />
+84-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:45:13-49
+85        <activity
+85-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:46:9-49:52
+86            android:name="com.dormitorymanager.SettingsActivity"
+86-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:47:13-45
+87            android:exported="false"
+87-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:48:13-37
+88            android:screenOrientation="portrait" />
+88-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:49:13-49
+89        <activity
+89-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:50:9-53:52
+90            android:name="com.dormitorymanager.ManageStudentsActivity"
+90-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:51:13-51
+91            android:exported="false"
+91-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:52:13-37
+92            android:screenOrientation="portrait" />
+92-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:53:13-49
+93        <activity
+93-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:54:9-57:52
+94            android:name="com.dormitorymanager.HistoryActivity"
+94-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:55:13-44
+95            android:exported="false"
+95-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:56:13-37
+96            android:screenOrientation="portrait" />
+96-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:57:13-49
+97        <activity
+97-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:58:9-61:52
+98            android:name="com.dormitorymanager.StatisticsActivity"
+98-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:59:13-47
+99            android:exported="false"
+99-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:60:13-37
+100            android:screenOrientation="portrait" />
+100-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:61:13-49
+101        <activity
+101-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:62:9-65:52
+102            android:name="com.dormitorymanager.LeaderboardActivity"
+102-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:63:13-48
+103            android:exported="false"
+103-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:64:13-37
+104            android:screenOrientation="portrait" />
+104-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:65:13-49
+105        <activity
+105-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:66:9-69:52
+106            android:name="com.dormitorymanager.CalendarActivity"
+106-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:67:13-45
+107            android:exported="false"
+107-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:68:13-37
+108            android:screenOrientation="portrait" />
+108-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:69:13-49
+109        <activity
+109-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:70:9-73:52
+110            android:name="com.dormitorymanager.SyncActivity"
+110-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:71:13-41
+111            android:exported="false"
+111-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:72:13-37
+112            android:screenOrientation="portrait" />
+112-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:73:13-49
+113        <activity
+113-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:74:9-77:52
+114            android:name="com.dormitorymanager.QrDisplayActivity"
+114-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:75:13-46
+115            android:exported="false"
+115-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:76:13-37
+116            android:screenOrientation="portrait" />
 116-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:77:13-49
-117            android:exported="false"
-117-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:78:13-37
-118            android:screenOrientation="portrait" />
+117        <activity
+117-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:78:9-81:52
+118            android:name="com.dormitorymanager.NetworkShareActivity"
 118-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:79:13-49
-119        <activity
-119-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:80:9-83:52
-120            android:name="com.dormitorymanager.ImportConfirmActivity"
-120-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:81:13-50
-121            android:exported="false"
-121-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:82:13-37
-122            android:screenOrientation="portrait" />
-122-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:83:13-49
-123        <activity
-123-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:84:9-87:52
-124            android:name="com.dormitorymanager.NetworkReceiveActivity"
-124-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:85:13-51
-125            android:exported="false"
-125-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:86:13-37
-126            android:screenOrientation="portrait" />
-126-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:87:13-49
-127        <activity
-127-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:88:9-92:57
-128            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-128-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:89:13-74
-129            android:clearTaskOnLaunch="true"
-129-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
-130            android:screenOrientation="portrait"
-130-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:90:13-49
-131            android:stateNotNeeded="true"
-131-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
-132            android:theme="@style/zxing_CaptureTheme"
-132-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:91:13-54
-133            android:windowSoftInputMode="stateAlwaysHidden" />
-133-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
-134
-135        <receiver
-135-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:94:9-97:40
-136            android:name="com.dormitorymanager.ReminderReceiver"
-136-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:95:13-45
-137            android:enabled="true"
-137-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:96:13-35
-138            android:exported="false" />
+119            android:exported="false"
+119-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:80:13-37
+120            android:screenOrientation="portrait" />
+120-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:81:13-49
+121        <activity
+121-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:82:9-85:52
+122            android:name="com.dormitorymanager.ImportConfirmActivity"
+122-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:83:13-50
+123            android:exported="false"
+123-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:84:13-37
+124            android:screenOrientation="portrait" />
+124-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:85:13-49
+125        <activity
+125-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:86:9-89:52
+126            android:name="com.dormitorymanager.NetworkReceiveActivity"
+126-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:87:13-51
+127            android:exported="false"
+127-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:88:13-37
+128            android:screenOrientation="portrait" />
+128-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:89:13-49
+129        <activity
+129-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:90:9-94:57
+130            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+130-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:91:13-74
+131            android:clearTaskOnLaunch="true"
+131-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+132            android:screenOrientation="portrait"
+132-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:92:13-49
+133            android:stateNotNeeded="true"
+133-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+134            android:theme="@style/zxing_CaptureTheme"
+134-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:93:13-54
+135            android:windowSoftInputMode="stateAlwaysHidden" />
+135-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+136        <activity
+136-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:95:9-98:52
+137            android:name="com.dormitorymanager.ToolsActivity"
+137-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:96:13-42
+138            android:exported="false"
 138-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:97:13-37
-139
-140        <provider
-140-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-141            android:name="androidx.startup.InitializationProvider"
-141-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-142            android:authorities="com.dormitorymanager.androidx-startup"
-142-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-143            android:exported="false" >
-143-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-144            <meta-data
-144-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-145                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-145-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-146                android:value="androidx.startup" />
-146-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-147            <meta-data
-147-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\24311\.gradle\caches\transforms-4\7778aef4e31a98693f49a13d6340c1b2\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-148                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-148-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\24311\.gradle\caches\transforms-4\7778aef4e31a98693f49a13d6340c1b2\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-149                android:value="androidx.startup" />
-149-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\24311\.gradle\caches\transforms-4\7778aef4e31a98693f49a13d6340c1b2\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-150            <meta-data
-150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-151                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-152                android:value="androidx.startup" />
-152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-153        </provider>
-154
-155        <receiver
-155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-156            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-157            android:directBootAware="false"
-157-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-158            android:enabled="true"
-158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-159            android:exported="true"
-159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-160            android:permission="android.permission.DUMP" >
-160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-161            <intent-filter>
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-162                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-163            </intent-filter>
-164            <intent-filter>
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-165                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-166            </intent-filter>
-167            <intent-filter>
-167-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-168                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-168-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-168-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-169            </intent-filter>
-170            <intent-filter>
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-171                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-172            </intent-filter>
-173        </receiver>
-174    </application>
-175
-176</manifest>
+139            android:screenOrientation="portrait" />
+139-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:98:13-49
+140        <activity
+140-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:99:9-102:52
+141            android:name="com.dormitorymanager.MemoActivity"
+141-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:100:13-41
+142            android:exported="false"
+142-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:101:13-37
+143            android:screenOrientation="portrait" />
+143-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:102:13-49
+144        <activity
+144-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:103:9-106:52
+145            android:name="com.dormitorymanager.MemoEditActivity"
+145-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:104:13-45
+146            android:exported="false"
+146-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:105:13-37
+147            android:screenOrientation="portrait" />
+147-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:106:13-49
+148        <activity
+148-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:107:9-110:52
+149            android:name="com.dormitorymanager.RandomPickerActivity"
+149-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:108:13-49
+150            android:exported="false"
+150-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:109:13-37
+151            android:screenOrientation="portrait" />
+151-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:110:13-49
+152        <activity
+152-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:111:9-114:52
+153            android:name="com.dormitorymanager.AboutActivity"
+153-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:112:13-42
+154            android:exported="false"
+154-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:113:13-37
+155            android:screenOrientation="portrait" />
+155-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:114:13-49
+156
+157        <receiver
+157-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:116:9-119:40
+158            android:name="com.dormitorymanager.ReminderReceiver"
+158-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:117:13-45
+159            android:enabled="true"
+159-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:118:13-35
+160            android:exported="false" />
+160-->C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:119:13-37
+161
+162        <provider
+162-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+163            android:name="androidx.startup.InitializationProvider"
+163-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+164            android:authorities="com.dormitorymanager.androidx-startup"
+164-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+165            android:exported="false" >
+165-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+166            <meta-data
+166-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+167                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+167-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+168                android:value="androidx.startup" />
+168-->[androidx.emoji2:emoji2:1.2.0] C:\Users\24311\.gradle\caches\transforms-4\e41d9f8e51a1197f12fdd782542de021\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+169            <meta-data
+169-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\24311\.gradle\caches\transforms-4\7778aef4e31a98693f49a13d6340c1b2\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+170                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+170-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\24311\.gradle\caches\transforms-4\7778aef4e31a98693f49a13d6340c1b2\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+171                android:value="androidx.startup" />
+171-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\24311\.gradle\caches\transforms-4\7778aef4e31a98693f49a13d6340c1b2\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+172            <meta-data
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+173                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+174                android:value="androidx.startup" />
+174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+175        </provider>
+176
+177        <receiver
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+178            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+179            android:directBootAware="false"
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+180            android:enabled="true"
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+181            android:exported="true"
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+182            android:permission="android.permission.DUMP" >
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+183            <intent-filter>
+183-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+184                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+185            </intent-filter>
+186            <intent-filter>
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+187                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+188            </intent-filter>
+189            <intent-filter>
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+190                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+191            </intent-filter>
+192            <intent-filter>
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+193                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+193-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+193-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\24311\.gradle\caches\transforms-4\c1fc76575c125338aefc0baad6c12ae1\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+194            </intent-filter>
+195        </receiver>
+196    </application>
+197
+198</manifest>

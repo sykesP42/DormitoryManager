@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">宿舍值日管理</string>
+    <string name="app_name">东凯宿舍管家</string>
     <string name="today_duty">今日值日</string>
     <string name="swap_duty">换班</string>
     <string name="timeoff_duty">调休</string>

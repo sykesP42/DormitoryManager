@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-100:12
-INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-100:12
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:2:1-122:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\24311\.gradle\caches\transforms-4\9d09b1ae38ca4aae6444efbaa417cb08\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\24311\.gradle\caches\transforms-4\cc9baf0e9a776ac8066c6e149b569906\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\24311\.gradle\caches\transforms-4\b1a13a3954e84e8e3a42a95011e41e88\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -111,8 +111,8 @@ MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradl
 	android:name
 		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:15:22-62
 application
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:17:5-98:19
-INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:17:5-98:19
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:17:5-120:19
+INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:17:5-120:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\24311\.gradle\caches\transforms-4\9d09b1ae38ca4aae6444efbaa417cb08\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\24311\.gradle\caches\transforms-4\9d09b1ae38ca4aae6444efbaa417cb08\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\24311\.gradle\caches\transforms-4\cc9baf0e9a776ac8066c6e149b569906\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -136,172 +136,216 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\24311\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\24311\.gradle\caches\transforms-4\bac97f5e5f392679d5e472ea1cb85ac2\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:21:9-41
+	android:roundIcon
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:20:9-54
 	tools:targetApi
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:22:9-29
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:24:9-29
+	android:icon
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:19:9-43
 	android:allowBackup
 		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:21:9-54
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:23:9-54
 activity#com.dormitorymanager.MainActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:23:9-31:20
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:25:9-33:20
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:28:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:25:13-36
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:24:13-41
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:26:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:27:13-30:29
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:29:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.dormitorymanager.SwapDutyActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:32:9-35:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:34:9-37:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:35:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:37:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:33:13-45
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:35:13-45
 activity#com.dormitorymanager.TimeOffActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:36:9-39:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:38:9-41:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:39:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:41:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:38:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:37:13-44
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:39:13-44
 activity#com.dormitorymanager.MakeupDutyActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:40:9-43:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:42:9-45:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:43:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:45:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:41:13-47
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:43:13-47
 activity#com.dormitorymanager.SettingsActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:44:9-47:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:46:9-49:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:47:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:49:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:48:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:45:13-45
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:47:13-45
 activity#com.dormitorymanager.ManageStudentsActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:48:9-51:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:50:9-53:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:51:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:53:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:50:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:49:13-51
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:51:13-51
 activity#com.dormitorymanager.HistoryActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:52:9-55:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:54:9-57:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:55:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:57:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:56:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:53:13-44
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:55:13-44
 activity#com.dormitorymanager.StatisticsActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:56:9-59:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:58:9-61:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:59:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:61:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:57:13-47
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:59:13-47
 activity#com.dormitorymanager.LeaderboardActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:60:9-63:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:62:9-65:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:63:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:65:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:62:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:61:13-48
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:63:13-48
 activity#com.dormitorymanager.CalendarActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:64:9-67:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:66:9-69:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:67:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:69:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:66:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:68:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:65:13-45
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:67:13-45
 activity#com.dormitorymanager.SyncActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:68:9-71:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:70:9-73:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:71:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:73:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:70:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:72:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:69:13-41
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:71:13-41
 activity#com.dormitorymanager.QrDisplayActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:72:9-75:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:74:9-77:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:75:13-49
-	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:74:13-37
-	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:73:13-46
-activity#com.dormitorymanager.NetworkShareActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:76:9-79:52
-	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:79:13-49
-	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:78:13-37
-	android:name
 		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:77:13-49
+	android:exported
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:76:13-37
+	android:name
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:75:13-46
+activity#com.dormitorymanager.NetworkShareActivity
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:78:9-81:52
+	android:screenOrientation
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:81:13-49
+	android:exported
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:80:13-37
+	android:name
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:79:13-49
 activity#com.dormitorymanager.ImportConfirmActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:80:9-83:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:82:9-85:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:83:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:85:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:82:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:84:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:81:13-50
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:83:13-50
 activity#com.dormitorymanager.NetworkReceiveActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:84:9-87:52
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:86:9-89:52
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:87:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:89:13-49
 	android:exported
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:86:13-37
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:88:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:85:13-51
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:87:13-51
 activity#com.journeyapps.barcodescanner.CaptureActivity
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:88:9-92:57
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:90:9-94:57
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
 	android:clearTaskOnLaunch
 		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
 	android:screenOrientation
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:90:13-49
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:92:13-49
 		REJECTED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
 	android:stateNotNeeded
 		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
 	android:windowSoftInputMode
 		ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\24311\.gradle\caches\transforms-4\b948fca374c4039f382f2c3470e011b8\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
 	android:theme
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:91:13-54
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:93:13-54
 	tools:replace
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:92:13-54
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:94:13-54
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:89:13-74
-receiver#com.dormitorymanager.ReminderReceiver
-ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:94:9-97:40
-	android:enabled
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:96:13-35
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:91:13-74
+activity#com.dormitorymanager.ToolsActivity
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:95:9-98:52
+	android:screenOrientation
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:98:13-49
 	android:exported
 		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:97:13-37
 	android:name
-		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:95:13-45
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:96:13-42
+activity#com.dormitorymanager.MemoActivity
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:99:9-102:52
+	android:screenOrientation
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:102:13-49
+	android:exported
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:101:13-37
+	android:name
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:100:13-41
+activity#com.dormitorymanager.MemoEditActivity
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:103:9-106:52
+	android:screenOrientation
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:106:13-49
+	android:exported
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:105:13-37
+	android:name
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:104:13-45
+activity#com.dormitorymanager.RandomPickerActivity
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:107:9-110:52
+	android:screenOrientation
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:110:13-49
+	android:exported
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:109:13-37
+	android:name
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:108:13-49
+activity#com.dormitorymanager.AboutActivity
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:111:9-114:52
+	android:screenOrientation
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:114:13-49
+	android:exported
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:113:13-37
+	android:name
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:112:13-42
+receiver#com.dormitorymanager.ReminderReceiver
+ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:116:9-119:40
+	android:enabled
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:118:13-35
+	android:exported
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:119:13-37
+	android:name
+		ADDED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml:117:13-45
 uses-sdk
 INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\24311\Documents\coding\SDM\DormitoryManager\app\src\main\AndroidManifest.xml

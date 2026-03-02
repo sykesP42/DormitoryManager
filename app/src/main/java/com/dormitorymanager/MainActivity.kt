@@ -134,6 +134,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.llQuickLeaderboard).setOnClickListener {
             startActivity(Intent(this, LeaderboardActivity::class.java))
         }
+
+        findViewById<LinearLayout>(R.id.llQuickTools).setOnClickListener {
+            startActivity(Intent(this, ToolsActivity::class.java))
+        }
     }
 
     private fun setupDrawer() {
@@ -166,11 +170,17 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_sync -> {
                     startActivity(Intent(this, SyncActivity::class.java))
                 }
+                R.id.nav_tools -> {
+                    startActivity(Intent(this, ToolsActivity::class.java))
+                }
                 R.id.nav_settings -> {
                     startActivity(Intent(this, SettingsActivity::class.java))
                 }
                 R.id.nav_theme -> {
                     showThemeDialog()
+                }
+                R.id.nav_about -> {
+                    startActivity(Intent(this, AboutActivity::class.java))
                 }
             }
             drawerLayout.closeDrawer(GravityCompat.START)
