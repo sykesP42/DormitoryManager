@@ -15,9 +15,11 @@ import java.time.format.DateTimeFormatter
 class MainActivity : AppCompatActivity() {
 
     private lateinit var db: DatabaseHelper
+    private lateinit var prefs: PreferencesHelper
     private var students: List<Student> = emptyList()
     private var todayDuty: Student? = null
 
+    private lateinit var tvTitle: TextView
     private lateinit var tvDate: TextView
     private lateinit var tvDutyInitial: TextView
     private lateinit var tvDutyName: TextView
@@ -30,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         db = DatabaseHelper(this)
+        prefs = PreferencesHelper(this)
         initViews()
         loadData()
     }
@@ -37,15 +40,19 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         loadData()
+        updateTitle()
     }
 
     private fun initViews() {
+        tvTitle = findViewById(R.id.tvTitle)
         tvDate = findViewById(R.id.tvDate)
         tvDutyInitial = findViewById(R.id.tvDutyInitial)
         tvDutyName = findViewById(R.id.tvDutyName)
         llDutyCircle = findViewById(R.id.llDutyCircle)
         rvStudents = findViewById(R.id.rvStudents)
         fabCalendar = findViewById(R.id.fabCalendar)
+
+        updateTitle()
 
         val today = LocalDate.now()
         val weekdays = arrayOf("周一", "周二", "周三", "周四", "周五", "周六", "周日")
@@ -71,8 +78,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<android.widget.ImageView>(R.id.ivSettings).setOnClickListener {
-            Toast.makeText(this, "设置功能开发中", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
+    }
+
+    private fun updateTitle() {
+        tvTitle.text = prefs.dormitoryName
     }
 
     private fun loadData() {
