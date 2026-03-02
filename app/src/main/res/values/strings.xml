@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">宿舍值日管理</string>
+    <string name="today_duty">今日值日</string>
+    <string name="swap_duty">换班</string>
+    <string name="timeoff_duty">调休</string>
+    <string name="makeup_duty">补值日</string>
+    <string name="timeoff">调休</string>
+    <string name="makeup">补值日</string>
+    <string name="calendar">日历视图</string>
+    <string name="settings">设置</string>
+    <string name="history">历史值日</string>
+    <string name="roommates">室友列表</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+</resources>

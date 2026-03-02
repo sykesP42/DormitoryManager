@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\layout_item_student.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\layout\\item_student.xml"
+    },
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\drawable_circle_border.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\drawable\\circle_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\drawable_badge_background.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\drawable\\badge_background.xml"
+    },
+    {
+        "merged": "com.dormitorymanager.app-debug-35:/layout_activity_makeup_duty.xml.flat",
+        "source": "com.dormitorymanager.app-main-37:/layout/activity_makeup_duty.xml"
+    },
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\drawable_gradient_background.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\drawable\\gradient_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\drawable_circle_background.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\drawable\\circle_background.xml"
+    },
+    {
+        "merged": "com.dormitorymanager.app-debug-35:/layout_activity_swap_duty.xml.flat",
+        "source": "com.dormitorymanager.app-main-37:/layout/activity_swap_duty.xml"
+    },
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-debug-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\24311\\.gradle\\daemon\\8.7\\com.dormitorymanager.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.dormitorymanager.app-debug-35:/layout_activity_time_off.xml.flat",
+        "source": "com.dormitorymanager.app-main-37:/layout/activity_time_off.xml"
+    }
+]
