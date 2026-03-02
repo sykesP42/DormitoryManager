@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.os.Bundle
 import android.widget.Button
 import android.widget.GridLayout
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -103,7 +104,7 @@ class ManageStudentsActivity : AppCompatActivity() {
         val gridColors = dialogView.findViewById<GridLayout>(R.id.gridColors)
 
         colors.forEachIndexed { index, color ->
-            val colorView = layoutInflater.inflate(R.layout.item_color, gridColors, false) as View
+            val colorView = layoutInflater.inflate(R.layout.item_color, gridColors, false)
             colorView.setBackgroundColor(color)
             colorView.setOnClickListener {
                 if (currentEditPosition >= 0) {
