@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         rvStudents.layoutManager = LinearLayoutManager(this)
 
         fabCalendar.setOnClickListener {
-            Toast.makeText(this, "日历视图功能开发中", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, HistoryActivity::class.java))
         }
 
         findViewById<androidx.cardview.widget.CardView>(R.id.cvSwap).setOnClickListener {

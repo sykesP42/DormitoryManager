@@ -209,6 +209,56 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         return Pair(students[index], "normal")
     }
 
+    fun getDutyHistory(): List<DutyHistoryItem> {
+        val items = mutableListOf<DutyHistoryItem>()
+        val today = LocalDate.now()
+        val firstDutyDate = getSetting("first_duty_date")?.let { LocalDate.parse(it) } ?: today
+
+        val db = readableDatabase
+        val cursor: Cursor = db.query(
+            TABLE_DUTIES,
+            null,
+            "$KEY_DATE <= ?",
+            arrayOf(today.format(DateTimeFormatter.ISO_LOCAL_DATE)),
+            null,
+            null,
+            "$KEY_DATE DESC, $KEY_ID DESC"
+        )
+
+        val existingDuties = mutableMapOf<String, DutyHistoryItem>()
+
+        cursor.use {
+            while (it.moveToNext()) {
+                val dateStr = it.getString(it.getColumnIndexOrThrow(KEY_DATE))
+                val studentId = it.getLong(it.getColumnIndexOrThrow(KEY_STUDENT_ID))
+                val type = it.getString(it.getColumnIndexOrThrow(KEY_TYPE))
+                val notes = it.getString(it.getColumnIndexOrThrow(KEY_NOTES))
+
+                if (!existingDuties.containsKey(dateStr)) {
+                    val date = LocalDate.parse(dateStr)
+                    val student = getStudentById(studentId)
+                    existingDuties[dateStr] = DutyHistoryItem(date, student, type, notes)
+                }
+            }
+        }
+
+        var currentDate = today
+        val endDate = firstDutyDate.minusDays(1)
+        
+        while (!currentDate.isBefore(endDate) && items.size < 30) {
+            val dateStr = currentDate.format(DateTimeFormatter.ISO_LOCAL_DATE)
+            if (existingDuties.containsKey(dateStr)) {
+                items.add(existingDuties[dateStr]!!)
+            } else {
+                val (student, type) = getDutyByDate(dateStr)
+                items.add(DutyHistoryItem(currentDate, student, type ?: "normal", null))
+            }
+            currentDate = currentDate.minusDays(1)
+        }
+
+        return items
+    }
+
     fun insertDuty(duty: Duty): Long {
         val db = writableDatabase
         val values = ContentValues().apply {
