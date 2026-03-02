@@ -1,6 +1,7 @@
 package com.dormitorymanager
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -45,7 +46,7 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         tvManageRoommates.setOnClickListener {
-            Toast.makeText(this, "室友管理功能开发中", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, ManageStudentsActivity::class.java))
         }
 
         btnSave.setOnClickListener {

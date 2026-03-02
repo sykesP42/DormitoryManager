@@ -126,6 +126,16 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         return db.insert(TABLE_STUDENTS, null, values)
     }
 
+    fun deleteAllStudents() {
+        val db = writableDatabase
+        db.delete(TABLE_STUDENTS, null, null)
+        db.delete(TABLE_DUTIES, null, null)
+    }
+
+    fun initializeDuties() {
+        setSetting("first_duty_date", LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE))
+    }
+
     fun getStudentById(id: Long): Student? {
         val db = readableDatabase
         val cursor: Cursor = db.query(
