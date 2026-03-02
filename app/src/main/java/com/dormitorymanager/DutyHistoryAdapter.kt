@@ -13,7 +13,11 @@ data class DutyHistoryItem(
     val date: LocalDate,
     val student: Student?,
     val type: String,
-    val notes: String?
+    val notes: String?,
+    val completed: Boolean = false,
+    val completedAt: String? = null,
+    val rating: Int = 0,
+    val likes: Int = 0
 )
 
 class DutyHistoryAdapter(
@@ -22,10 +26,14 @@ class DutyHistoryAdapter(
 
     inner class DutyHistoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val llItemBackground: LinearLayout = itemView.findViewById(R.id.llItemBackground)
+        val cardView: androidx.cardview.widget.CardView = itemView as androidx.cardview.widget.CardView
         val tvDate: TextView = itemView.findViewById(R.id.tvDate)
         val tvStudentName: TextView = itemView.findViewById(R.id.tvStudentName)
         val tvType: TextView = itemView.findViewById(R.id.tvType)
         val tvNotes: TextView = itemView.findViewById(R.id.tvNotes)
+        val tvRating: TextView = itemView.findViewById(R.id.tvRating)
+        val tvLikes: TextView = itemView.findViewById(R.id.tvLikes)
+        val tvCompletedAt: TextView = itemView.findViewById(R.id.tvCompletedAt)
 
         fun bind(item: DutyHistoryItem) {
             val formatter = DateTimeFormatter.ofPattern("yyyy年M月d日")
@@ -33,7 +41,7 @@ class DutyHistoryAdapter(
             
             item.student?.let {
                 tvStudentName.text = it.name
-                llItemBackground.setBackgroundColor(it.color)
+                cardView.setCardBackgroundColor(it.color)
             } ?: run {
                 tvStudentName.text = "未分配"
             }
@@ -51,6 +59,16 @@ class DutyHistoryAdapter(
             } else {
                 tvNotes.visibility = View.VISIBLE
                 tvNotes.text = item.notes
+            }
+
+            tvRating.text = if (item.rating > 0) item.rating.toString() else "-"
+            tvLikes.text = item.likes.toString()
+            
+            if (item.completed && item.completedAt != null) {
+                tvCompletedAt.text = "完成于 ${item.completedAt}"
+                tvCompletedAt.visibility = View.VISIBLE
+            } else {
+                tvCompletedAt.visibility = View.GONE
             }
         }
     }

@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-zh-rCN/values-zh-rCN.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-zh-rCN/values-zh-rCN.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b948fca374c4039f382f2c3470e011b8\\transformed\\jetified-zxing-android-embedded-4.3.0\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,104,151,238",
+                        "endColumns": "48,46,86,68",
+                        "endOffsets": "99,146,233,302"
+                    },
+                    "to": {
+                        "startLines": "110,111,112,113",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8453,8502,8549,8636",
+                        "endColumns": "48,46,86,68",
+                        "endOffsets": "8497,8544,8631,8700"
+                    }
+                },
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\9d09b1ae38ca4aae6444efbaa417cb08\\transformed\\material-1.11.0\\res\\values-zh-rCN\\values-zh-rCN.xml",
                     "from": {

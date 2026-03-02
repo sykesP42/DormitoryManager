@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b0926d70ad2a5a8038ea0334294266ec\\transformed\\appcompat-1.6.1\\res\\values-en-rCA\\values-en-rCA.xml",

@@ -8,18 +8,26 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <color name="primary">#FF6750A4</color>
-    <color name="primary_dark">#FF4E368B</color>
-    <color name="accent">#FF2196F3</color>
-    <color name="background">#FF121212</color>
-    <color name="surface">#FF1E1E1E</color>
-    <color name="text_primary">#FFFFFFFF</color>
-    <color name="text_secondary">#FFB3B3B3</color>
+    <color name="primary">#FF6366F1</color>
+    <color name="primary_dark">#FF4F46E5</color>
+    <color name="primary_light">#FF818CF8</color>
+    <color name="accent">#FF10B981</color>
+    <color name="accent_light">#FF34D399</color>
+    <color name="background">#FFF8FAFC</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_light">#FFF1F5F9</color>
+    <color name="text_primary">#FF1E293B</color>
+    <color name="text_secondary">#FF64748B</color>
+    <color name="text_hint">#FF94A3B8</color>
     
-    <color name="color_1">#FF6750A4</color>
-    <color name="color_2">#FF2196F3</color>
-    <color name="color_3">#FF4CAF50</color>
-    <color name="color_4">#FFFF9800</color>
-    <color name="color_5">#FFE91E63</color>
-    <color name="color_6">#FF9C27B0</color>
+    <color name="color_1">#FF6366F1</color>
+    <color name="color_2">#FF10B981</color>
+    <color name="color_3">#FF3B82F6</color>
+    <color name="color_4">#FFF59E0B</color>
+    <color name="color_5">#FFEC4899</color>
+    <color name="color_6">#FF8B5CF6</color>
+    <color name="color_7">#FF06B6D4</color>
+    <color name="color_8">#FFF97316</color>
+    <color name="color_9">#FF14B8A6</color>
+    <color name="color_10">#FFA855F7</color>
 </resources>

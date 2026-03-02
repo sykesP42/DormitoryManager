@@ -23,6 +23,9 @@ class StudentEditAdapter(
     private val onDeleteClick: (Int) -> Unit
 ) : RecyclerView.Adapter<StudentEditAdapter.StudentEditViewHolder>() {
 
+    private val visibleStudents: List<EditableStudent>
+        get() = students.filter { !it.isDeleted }
+
     inner class StudentEditViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val llColorPicker: LinearLayout = itemView.findViewById(R.id.llColorPicker)
         val etName: EditText = itemView.findViewById(R.id.etStudentName)
@@ -39,11 +42,17 @@ class StudentEditAdapter(
             }
 
             llColorPicker.setOnClickListener {
-                onColorClick(position)
+                val originalPosition = students.indexOf(student)
+                if (originalPosition >= 0) {
+                    onColorClick(originalPosition)
+                }
             }
 
             ivDelete.setOnClickListener {
-                onDeleteClick(position)
+                val originalPosition = students.indexOf(student)
+                if (originalPosition >= 0) {
+                    onDeleteClick(originalPosition)
+                }
             }
         }
     }
@@ -55,30 +64,29 @@ class StudentEditAdapter(
     }
 
     override fun onBindViewHolder(holder: StudentEditViewHolder, position: Int) {
-        holder.bind(position, students[position])
+        holder.bind(position, visibleStudents[position])
     }
 
-    override fun getItemCount(): Int = students.size
+    override fun getItemCount(): Int = visibleStudents.size
 
-    fun getStudents(): List<EditableStudent> = students.filter { !it.isDeleted }
+    fun getStudents(): List<EditableStudent> = visibleStudents
 
     fun addStudent(student: EditableStudent) {
         students.add(student)
-        notifyItemInserted(students.size - 1)
+        notifyItemInserted(visibleStudents.size - 1)
     }
 
     fun removeStudent(position: Int) {
         if (students[position].id == 0L) {
             students.removeAt(position)
-            notifyItemRemoved(position)
         } else {
             students[position].isDeleted = true
-            notifyItemChanged(position)
         }
+        notifyDataSetChanged()
     }
 
     fun updateColor(position: Int, color: Int) {
         students[position].color = color
-        notifyItemChanged(position)
+        notifyDataSetChanged()
     }
 }

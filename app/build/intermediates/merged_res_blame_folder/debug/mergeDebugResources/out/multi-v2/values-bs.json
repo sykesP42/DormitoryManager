@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-bs/values-bs.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-bs/values-bs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\bac97f5e5f392679d5e472ea1cb85ac2\\transformed\\core-1.12.0\\res\\values-bs\\values-bs.xml",

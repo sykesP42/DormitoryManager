@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-sk/values-sk.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-sk/values-sk.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b948fca374c4039f382f2c3470e011b8\\transformed\\jetified-zxing-android-embedded-4.3.0\\res\\values-sk\\values-sk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,315",
+                        "endColumns": "58,46,153,120",
+                        "endOffsets": "109,156,310,431"
+                    },
+                    "to": {
+                        "startLines": "112,113,114,115",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "9513,9572,9619,9773",
+                        "endColumns": "58,46,153,120",
+                        "endOffsets": "9567,9614,9768,9889"
+                    }
+                },
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b0926d70ad2a5a8038ea0334294266ec\\transformed\\appcompat-1.6.1\\res\\values-sk\\values-sk.xml",
                     "from": {

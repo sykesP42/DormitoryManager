@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-iw/values-iw.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\9d09b1ae38ca4aae6444efbaa417cb08\\transformed\\material-1.11.0\\res\\values-iw\\values-iw.xml",
@@ -37,6 +37,23 @@
                         "startOffsets": "3437,3531,3633,3730,3827,3928,4028,9061",
                         "endColumns": "93,101,96,96,100,99,105,100",
                         "endOffsets": "3526,3628,3725,3822,3923,4023,4129,9157"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b948fca374c4039f382f2c3470e011b8\\transformed\\jetified-zxing-android-embedded-4.3.0\\res\\values-iw\\values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,111,161,296",
+                        "endColumns": "55,49,134,89",
+                        "endOffsets": "106,156,291,381"
+                    },
+                    "to": {
+                        "startLines": "111,112,113,114",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "9162,9218,9268,9403",
+                        "endColumns": "55,49,134,89",
+                        "endOffsets": "9213,9263,9398,9488"
                     }
                 },
                 {

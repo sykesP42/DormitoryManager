@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="首页" />
+    </group>
+
+    <item android:title="值日管理">
+        <menu>
+            <item
+                android:id="@+id/nav_swap"
+                android:title="交换值日" />
+            <item
+                android:id="@+id/nav_timeoff"
+                android:title="调休" />
+            <item
+                android:id="@+id/nav_makeup"
+                android:title="补值日" />
+        </menu>
+    </item>
+
+    <item android:title="数据与统计">
+        <menu>
+            <item
+                android:id="@+id/nav_history"
+                android:title="历史记录" />
+            <item
+                android:id="@+id/nav_statistics"
+                android:title="统计" />
+            <item
+                android:id="@+id/nav_leaderboard"
+                android:title="排行榜" />
+            <item
+                android:id="@+id/nav_calendar"
+                android:title="日历视图" />
+        </menu>
+    </item>
+
+    <item android:title="数据同步">
+        <menu>
+            <item
+                android:id="@+id/nav_sync"
+                android:title="数据同步" />
+        </menu>
+    </item>
+
+    <item android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_theme"
+                android:title="主题" />
+        </menu>
+    </item>
+
+</menu>

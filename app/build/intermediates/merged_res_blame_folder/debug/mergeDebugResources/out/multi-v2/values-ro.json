@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-ro/values-ro.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b0926d70ad2a5a8038ea0334294266ec\\transformed\\appcompat-1.6.1\\res\\values-ro\\values-ro.xml",
@@ -35,6 +35,23 @@
                         "startOffsets": "3570,3668,3770,3870,3969,4071,4180,9526",
                         "endColumns": "97,101,99,98,101,108,116,100",
                         "endOffsets": "3663,3765,3865,3964,4066,4175,4292,9622"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b948fca374c4039f382f2c3470e011b8\\transformed\\jetified-zxing-android-embedded-4.3.0\\res\\values-ro\\values-ro.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,166,275",
+                        "endColumns": "58,51,108,116",
+                        "endOffsets": "109,161,270,387"
+                    },
+                    "to": {
+                        "startLines": "111,112,113,114",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "9627,9686,9738,9847",
+                        "endColumns": "58,51,108,116",
+                        "endOffsets": "9681,9733,9842,9959"
                     }
                 },
                 {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-bg/values-bg.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\9d09b1ae38ca4aae6444efbaa417cb08\\transformed\\material-1.11.0\\res\\values-bg\\values-bg.xml",
@@ -54,6 +54,23 @@
                         "startOffsets": "3537,3634,3744,3846,3947,4054,4159,9531",
                         "endColumns": "96,109,101,100,106,104,118,100",
                         "endOffsets": "3629,3739,3841,3942,4049,4154,4273,9627"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\b948fca374c4039f382f2c3470e011b8\\transformed\\jetified-zxing-android-embedded-4.3.0\\res\\values-bg\\values-bg.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,112,159,311",
+                        "endColumns": "56,46,151,110",
+                        "endOffsets": "107,154,306,417"
+                    },
+                    "to": {
+                        "startLines": "110,111,112,113",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "9632,9689,9736,9888",
+                        "endColumns": "56,46,151,110",
+                        "endOffsets": "9684,9731,9883,9994"
                     }
                 }
             ]

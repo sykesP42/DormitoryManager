@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dormitorymanager.app-mergeDebugResources-33:/values-gl/values-gl.xml",
+            "outputFile": "com.dormitorymanager.app-mergeDebugResources-34:/values-gl/values-gl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\24311\\.gradle\\caches\\transforms-4\\9d09b1ae38ca4aae6444efbaa417cb08\\transformed\\material-1.11.0\\res\\values-gl\\values-gl.xml",
