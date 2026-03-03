@@ -16,13 +16,29 @@ class PreferencesHelper(context: Context) {
         private const val KEY_REMINDER_HOUR = "reminder_hour"
         private const val KEY_REMINDER_MINUTE = "reminder_minute"
         private const val KEY_THEME_MODE = "theme_mode"
+        private const val KEY_CURRENT_USER_ID = "current_user_id"
+        private const val KEY_REMINDER_ADVANCE_TIME = "reminder_advance_time"
+        private const val KEY_REMINDER_REPEAT = "reminder_repeat"
+        private const val KEY_REMINDER_VOICE = "reminder_voice"
+        private const val KEY_SPLASH_ANIMATION = "splash_animation"
         private const val DEFAULT_DORMITORY_NAME = "我的宿舍"
         private const val DEFAULT_DORMITORY_SIZE = 6
         private const val DEFAULT_REMINDER_HOUR = 8
         private const val DEFAULT_REMINDER_MINUTE = 0
+        private const val DEFAULT_CURRENT_USER_ID = -1L
+        private const val DEFAULT_REMINDER_ADVANCE_TIME = 0
+        private const val DEFAULT_REMINDER_REPEAT = false
+        private const val DEFAULT_REMINDER_VOICE = false
+        private const val DEFAULT_SPLASH_ANIMATION = true
         const val THEME_MODE_SYSTEM = 0
         const val THEME_MODE_LIGHT = 1
         const val THEME_MODE_DARK = 2
+        const val REMINDER_ADVANCE_NONE = 0
+        const val REMINDER_ADVANCE_15_MIN = 15
+        const val REMINDER_ADVANCE_30_MIN = 30
+        const val REMINDER_ADVANCE_1_HOUR = 60
+        const val REMINDER_ADVANCE_2_HOURS = 120
+        const val REMINDER_ADVANCE_1_DAY = 1440
     }
 
     var dormitoryName: String
@@ -52,6 +68,26 @@ class PreferencesHelper(context: Context) {
     var themeMode: Int
         get() = prefs.getInt(KEY_THEME_MODE, THEME_MODE_SYSTEM)
         set(value) = prefs.edit().putInt(KEY_THEME_MODE, value).apply()
+
+    var currentUserId: Long
+        get() = prefs.getLong(KEY_CURRENT_USER_ID, DEFAULT_CURRENT_USER_ID)
+        set(value) = prefs.edit().putLong(KEY_CURRENT_USER_ID, value).apply()
+
+    var reminderAdvanceTime: Int
+        get() = prefs.getInt(KEY_REMINDER_ADVANCE_TIME, DEFAULT_REMINDER_ADVANCE_TIME)
+        set(value) = prefs.edit().putInt(KEY_REMINDER_ADVANCE_TIME, value).apply()
+
+    var reminderRepeat: Boolean
+        get() = prefs.getBoolean(KEY_REMINDER_REPEAT, DEFAULT_REMINDER_REPEAT)
+        set(value) = prefs.edit().putBoolean(KEY_REMINDER_REPEAT, value).apply()
+
+    var reminderVoice: Boolean
+        get() = prefs.getBoolean(KEY_REMINDER_VOICE, DEFAULT_REMINDER_VOICE)
+        set(value) = prefs.edit().putBoolean(KEY_REMINDER_VOICE, value).apply()
+
+    var splashAnimation: Boolean
+        get() = prefs.getBoolean(KEY_SPLASH_ANIMATION, DEFAULT_SPLASH_ANIMATION)
+        set(value) = prefs.edit().putBoolean(KEY_SPLASH_ANIMATION, value).apply()
 
     fun clear() {
         prefs.edit().clear().apply()

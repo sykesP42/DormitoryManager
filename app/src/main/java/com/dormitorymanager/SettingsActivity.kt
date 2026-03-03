@@ -27,6 +27,10 @@ class SettingsActivity : AppCompatActivity() {
     private var dormitorySize = 6
     private var reminderHour = 8
     private var reminderMinute = 0
+    private var reminderAdvanceTime = 0
+    private var reminderRepeat = false
+    private var reminderVoice = false
+    private var splashAnimation = true
 
     private lateinit var etDormitoryName: EditText
     private lateinit var tvStartDate: TextView
@@ -36,12 +40,19 @@ class SettingsActivity : AppCompatActivity() {
     private lateinit var switchReminder: Switch
     private lateinit var llReminderTime: LinearLayout
     private lateinit var tvReminderTime: TextView
+    private lateinit var tvAdvanceTime: TextView
+    private lateinit var switchRepeat: Switch
+    private lateinit var switchVoice: Switch
+    private lateinit var switchSplashAnimation: Switch
     private lateinit var tvManageRoommates: TextView
+    private lateinit var tvCurrentUser: TextView
     private lateinit var btnSave: Button
     private lateinit var btnBackup: Button
     private lateinit var btnRestore: Button
     private lateinit var btnSync: Button
     private lateinit var db: DatabaseHelper
+    
+    private var selectedUserId: Long = -1L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,7 +73,12 @@ class SettingsActivity : AppCompatActivity() {
         switchReminder = findViewById(R.id.switchReminder)
         llReminderTime = findViewById(R.id.llReminderTime)
         tvReminderTime = findViewById(R.id.tvReminderTime)
+        tvAdvanceTime = findViewById(R.id.tvAdvanceTime)
+        switchRepeat = findViewById(R.id.switchRepeat)
+        switchVoice = findViewById(R.id.switchVoice)
+        switchSplashAnimation = findViewById(R.id.switchSplashAnimation)
         tvManageRoommates = findViewById(R.id.tvManageRoommates)
+        tvCurrentUser = findViewById(R.id.tvCurrentUser)
         btnSave = findViewById(R.id.btnSave)
         btnBackup = findViewById(R.id.btnBackup)
         btnRestore = findViewById(R.id.btnRestore)
@@ -114,8 +130,16 @@ class SettingsActivity : AppCompatActivity() {
             showTimePicker()
         }
 
+        tvAdvanceTime.setOnClickListener {
+            showAdvanceTimePicker()
+        }
+
         tvManageRoommates.setOnClickListener {
             startActivity(Intent(this, ManageStudentsActivity::class.java))
+        }
+
+        tvCurrentUser.setOnClickListener {
+            showStudentPicker()
         }
 
         btnSave.setOnClickListener {
@@ -140,15 +164,91 @@ class SettingsActivity : AppCompatActivity() {
         }
         reminderHour = prefs.reminderHour
         reminderMinute = prefs.reminderMinute
+        reminderAdvanceTime = prefs.reminderAdvanceTime
+        reminderRepeat = prefs.reminderRepeat
+        reminderVoice = prefs.reminderVoice
         updateReminderTimeDisplay()
+        updateAdvanceTimeDisplay()
+        switchRepeat.isChecked = reminderRepeat
+        switchVoice.isChecked = reminderVoice
+        splashAnimation = prefs.splashAnimation
+        switchSplashAnimation.isChecked = splashAnimation
+        
+        selectedUserId = prefs.currentUserId
+        updateCurrentUserDisplay()
     }
 
     private fun updateSizeDisplay() {
         tvDormitorySize.text = dormitorySize.toString()
     }
+    
+    private fun updateCurrentUserDisplay() {
+        if (selectedUserId == -1L) {
+            tvCurrentUser.text = "请选择"
+        } else {
+            val student = db.getStudentById(selectedUserId)
+            tvCurrentUser.text = student?.name ?: "请选择"
+        }
+    }
+    
+    private fun showStudentPicker() {
+        val students = db.getStudents()
+        if (students.isEmpty()) {
+            Toast.makeText(this, "请先添加室友", Toast.LENGTH_SHORT).show()
+            return
+        }
+        
+        val studentNames = students.map { it.name }.toTypedArray()
+        val builder = android.app.AlertDialog.Builder(this)
+        builder.setTitle("选择自己")
+        builder.setItems(studentNames) { _, which ->
+            selectedUserId = students[which].id
+            updateCurrentUserDisplay()
+        }
+        builder.show()
+    }
 
     private fun updateReminderTimeDisplay() {
         tvReminderTime.text = String.format("%02d:%02d", reminderHour, reminderMinute)
+    }
+
+    private fun updateAdvanceTimeDisplay() {
+        val text = when (reminderAdvanceTime) {
+            PreferencesHelper.REMINDER_ADVANCE_NONE -> "准时提醒"
+            PreferencesHelper.REMINDER_ADVANCE_15_MIN -> "提前15分钟"
+            PreferencesHelper.REMINDER_ADVANCE_30_MIN -> "提前30分钟"
+            PreferencesHelper.REMINDER_ADVANCE_1_HOUR -> "提前1小时"
+            PreferencesHelper.REMINDER_ADVANCE_2_HOURS -> "提前2小时"
+            PreferencesHelper.REMINDER_ADVANCE_1_DAY -> "提前1天"
+            else -> "准时提醒"
+        }
+        tvAdvanceTime.text = text
+    }
+
+    private fun showAdvanceTimePicker() {
+        val options = arrayOf(
+            "准时提醒",
+            "提前15分钟",
+            "提前30分钟",
+            "提前1小时",
+            "提前2小时",
+            "提前1天"
+        )
+        val values = intArrayOf(
+            PreferencesHelper.REMINDER_ADVANCE_NONE,
+            PreferencesHelper.REMINDER_ADVANCE_15_MIN,
+            PreferencesHelper.REMINDER_ADVANCE_30_MIN,
+            PreferencesHelper.REMINDER_ADVANCE_1_HOUR,
+            PreferencesHelper.REMINDER_ADVANCE_2_HOURS,
+            PreferencesHelper.REMINDER_ADVANCE_1_DAY
+        )
+        val builder = android.app.AlertDialog.Builder(this)
+        builder.setTitle("选择提前提醒时间")
+        builder.setItems(options) { _, which ->
+            reminderAdvanceTime = values[which]
+            updateAdvanceTimeDisplay()
+        }
+        builder.show()
     }
 
     private fun showDatePicker() {
@@ -199,10 +299,15 @@ class SettingsActivity : AppCompatActivity() {
         prefs.reminderEnabled = switchReminder.isChecked
         prefs.reminderHour = reminderHour
         prefs.reminderMinute = reminderMinute
+        prefs.reminderAdvanceTime = reminderAdvanceTime
+        prefs.reminderRepeat = switchRepeat.isChecked
+        prefs.reminderVoice = switchVoice.isChecked
+        prefs.splashAnimation = switchSplashAnimation.isChecked
+        prefs.currentUserId = selectedUserId
 
         val alarmHelper = AlarmManagerHelper(this)
         if (switchReminder.isChecked) {
-            alarmHelper.setReminder(reminderHour, reminderMinute)
+            alarmHelper.setReminder(reminderHour, reminderMinute, reminderAdvanceTime, switchRepeat.isChecked)
         } else {
             alarmHelper.cancelReminder()
         }
@@ -222,6 +327,10 @@ class SettingsActivity : AppCompatActivity() {
                 reminderEnabled = prefs.reminderEnabled,
                 reminderHour = prefs.reminderHour,
                 reminderMinute = prefs.reminderMinute,
+                reminderAdvanceTime = prefs.reminderAdvanceTime,
+                reminderRepeat = prefs.reminderRepeat,
+                reminderVoice = prefs.reminderVoice,
+                currentUserId = prefs.currentUserId,
                 students = students
             )
 
